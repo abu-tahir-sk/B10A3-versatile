@@ -20,6 +20,8 @@
         tailwind.config = {
           theme: {
             extend: {
+             
+
               colors: {
                 clifford: '#da373d',
                 'arrow-a': '#1C1C1C',
@@ -28,6 +30,10 @@
                 'bg-card-2': '#EFDA6E',
                 'bg-card-3': '#A4DAC3',
                 'bg-card-4': '#77AAEA',
+              },
+              backgroundImage: {
+        'hero-pattern': "url('/assets/bg.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
               }
             }
           }
@@ -198,33 +204,33 @@
 
           </section> 
           <!-- Our Latest Portfolio -->
-          <section class="mb-12 md:container mx-auto ">
+          <section class="mx-auto ">
             <h5 class="text-center mb-4"><a class="font-bold text-1xl"><i class="fa-solid fa-arrow-right p-2 rounded-full"></i> Explore our Latest works</a></h5>
             <h2 class="font-bold text-5xl text-center mb-4">Our Latest Portfolio</h2>
             <p class="text-center text-gray-700 mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <!-- cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center m-12 md:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center m-6 mx-14 md:mx-6 md:px-20">
                        <!-- card 1 -->
-              <div class="md:flex md:col-span-3 md:w-2/3 gap-8">
-                <img src="assets/img1.png" alt="">
-                <div class="">
+              <div class="md:flex md:col-span-3 gap-8">
+                <img class="w-54" src="assets/img1.png" alt="">
+                <div class="text-start">
                   <h3 class="font-bold text-3xl my-4">Commercial</h3>
                   <p class="my-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <a class="font-bold text-1xl"><i class="fa-solid fa-arrow-up p-2 rotate-30 bg-yellow-400 rounded-full"></i> View Details</a>
                 </div>
               </div>
               <!-- card 2 -->
-              <div>
-                <img src="assets/img2.png" alt="">
+              <div class="">
+                <img class="w-54" src="assets/img2.png" alt="">
               </div>
               <!-- card 3 -->
               <div>
-                <img src="assets/img3.png" alt="">
+                <img class="w-54" src="assets/img3.png" alt="">
               </div>
               <!-- card 4 -->
-                <div class="md:flex md:col-span-2 md:w-2/3 gap-8">
-                <img src="assets/img4.png" alt="">
-                <div class="">
+                <div class="md:flex md:col-span-2 gap-8">
+                <img class="w-54" src="assets/img4.png" alt="">
+                <div class="text-start">
                 
                   <h3 class="font-bold text-3xl my-4">Commercial</h3>
                   <p class="my-4">The barn house captivates with its blend of rustic charm and modern.</p>
@@ -233,12 +239,62 @@
               </div>
               <!-- card 5 -->
               <div>
-                <img src="assets/img5.png" alt="">
+                <img class="w-54" src="assets/img5.png" alt="">
               </div>
 
             </div>
-                 
-          </section>
+            </section>
+            <section class="my-12 mx-auto hero-pattern">
+               <div class="text-center"> <button class="btn font-bold"><i class="fa-solid fa-arrow-right p-2 rounded-full"></i>Let’s Connect</button>
+                 title
+                <h1 class="text-5xl font-bold text-center py-4">Let’s Discuss Next Project</h1>
+                 description 
+                <p class="text-lg text-gray-600 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p> 
+
+              </div>
+
+              <div class="mx-auto p-4 md:px-8 bg-base-200 rounded-xl shadow-md space-y-4">
+                <div class="md:flex gap-4">
+                  <input type="text" placeholder="First Name" class="input input-bordered w-1/2" />
+                  <input type="text" placeholder="Last Name" class="input input-bordered w-1/2" />
+                </div>
+              
+                <div class="md:flex gap-4">
+                  <input type="tel" placeholder="Phone Number" class="input input-bordered w-1/2" />
+                  <input type="email" placeholder="Email Address" class="input input-bordered w-1/2" />
+                </div>
+              
+                <div>
+                  <textarea class="textarea textarea-bordered w-full" rows="4" placeholder="Message here..."></textarea>
+                </div>
+              
+                <div class="text-center">
+                  <button class="btn bg-bg-btn w-full">Send Email   <i class="fa-solid fa-arrow-up p-2 rotate-30 bg-black rounded-full text-white"></i></button>
+                </div>
+              </div>
+            </section>
+         
     </main>
+    <!-- footer -->
+    <footer class="footer footer-horizontal footer-center bg-black text-base-content rounded p-10">
+      <h4 class="btn btn-ghost font-bold text-3xl text-white flex">
+        <i class="fa-solid fa-arrow-up p-2 rotate-30 bg-yellow-400 rounded-full"></i>Rinterio</h4>
+        <p class="text-white text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>  
+
+      <nav class="grid grid-cols-1 md:grid-cols-4 gap-20 text-white">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+       <div class="navbar gap-2">
+       
+        <a class="btn font-bold bg-bg-btn rounded-full">Book Consult<i class="fa-solid fa-arrow-up p-2 rotate-30 bg-black rounded-full text-white"></i></a>
+      </div>
+         
+      <aside>
+        <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
 </body>
 </html>
