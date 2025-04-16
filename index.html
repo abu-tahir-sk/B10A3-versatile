@@ -50,7 +50,7 @@
 <body class="font-manrope">
     <header class="md:container mx-auto mb-12">
       <!-- navbar -->
-      <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar">
 
       <div class="navbar-start">
           <div class="dropdown">
@@ -59,7 +59,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
@@ -88,9 +88,9 @@
         
       </div>
       <!-- hero section -->
-      <div class="hero min-h-screen bg-base-200">
+      <div class="hero min-h-screen">
         <div class="hero-content text-center flex flex-col">
-          <img src="assets/banner.png" alt="Hero Image" class="mb-6 rounded-lg shadow-lg" />
+          <img src="assets/banner.png" alt="Hero Image" class="mb-6 rounded-lg" />
           <div class="">
             <h1 class="text-7xl font-bold mb-4">A barn house of this design has a striking appearance</h1>
             <p class="mb-6  md:px-40">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
@@ -139,6 +139,57 @@
             <img src="assets/Vector.png" alt="">
           </div>
          </section>
+         <!-- cards section -->
+          <section class="mb-12 md:container mx-auto bg-white rounded-md
+          md:shadow-md">
+            <!-- cards grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:mx-20">
+              <!-- card 1 -->
+              <div class="card">
+                <figure class="pt-10">
+                  <i class="fas fa-comment-dots"></i>                
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-bold text-4xl">235+</h2>
+                  <p class="text-gray-700">Happy Client Review</p>
+                  
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <i class="fa-solid fa-building"></i>               
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-bold text-4xl">235+</h2>
+                  <p class="text-gray-700">Happy Client Review</p>
+                  
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <i class="fa-solid fa-users"></i>                
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-bold text-4xl">235+</h2>
+                  <p class="text-gray-700">Happy Client Review</p>
+                  
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <i class="fa-solid fa-user"></i>                
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-bold text-4xl">235+</h2>
+                  <p class="text-gray-700">Happy Client Review</p>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
         
          <!-- cards -->
         <section class="mb-12 md:container mx-auto px-auto">
@@ -244,7 +295,7 @@
 
             </div>
             </section>
-            <section class="my-12 mx-auto hero-pattern">
+            <section class="my-12 mx-auto hero-pattern bg-[url(/assets/bg.jpg)]">
                <div class="text-center"> <button class="btn font-bold"><i class="fa-solid fa-arrow-right p-2 rounded-full"></i>Let’s Connect</button>
                  title
                 <h1 class="text-5xl font-bold text-center py-4">Let’s Discuss Next Project</h1>
@@ -253,23 +304,23 @@
 
               </div>
 
-              <div class="mx-auto p-4 md:px-8 bg-base-200 rounded-xl shadow-md space-y-4">
+              <div class="mx-auto p-4 md:px-8 rounded-xl shadow-md space-y-4">
                 <div class="md:flex gap-4">
-                  <input type="text" placeholder="First Name" class="input input-bordered w-1/2" />
-                  <input type="text" placeholder="Last Name" class="input input-bordered w-1/2" />
+                  <input type="text" placeholder="First Name" class="input input-bordered w-1/2 pl-4 rounded-full" />
+                  <input type="text" placeholder="Last Name" class="input input-bordered w-1/2 pl-4 rounded-full" />
                 </div>
               
                 <div class="md:flex gap-4">
-                  <input type="tel" placeholder="Phone Number" class="input input-bordered w-1/2" />
-                  <input type="email" placeholder="Email Address" class="input input-bordered w-1/2" />
+                  <input type="tel" placeholder="Phone Number" class="input input-bordered w-1/2 pl-4 rounded-full" />
+                  <input type="email" placeholder="Email Address" class="input input-bordered w-1/2 pl-4 rounded-full" />
                 </div>
               
                 <div>
-                  <textarea class="textarea textarea-bordered w-full" rows="4" placeholder="Message here..."></textarea>
+                  <textarea class="textarea textarea-bordered pl-4 w-full rounded-md" rows="4" placeholder="Message here..."></textarea>
                 </div>
               
                 <div class="text-center">
-                  <button class="btn bg-bg-btn w-full">Send Email   <i class="fa-solid fa-arrow-up p-2 rotate-30 bg-black rounded-full text-white"></i></button>
+                  <button class="btn bg-bg-btn w-full">Send Email<i class="fa-solid fa-arrow-up p-2 rotate-30 bg-black rounded-full text-white"></i></button>
                 </div>
               </div>
             </section>
@@ -291,10 +342,6 @@
        
         <a class="btn font-bold bg-bg-btn rounded-full">Book Consult<i class="fa-solid fa-arrow-up p-2 rotate-30 bg-black rounded-full text-white"></i></a>
       </div>
-         
-      <aside>
-        <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
-      </aside>
     </footer>
 </body>
 </html>
